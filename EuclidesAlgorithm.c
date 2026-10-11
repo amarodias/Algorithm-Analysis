@@ -10,6 +10,18 @@ int mdcByStubtractions (int a, int b)
     return a;
     }
 }
+//By the remainder of the division
+int mdcByRemainderOfDivison (int a, int b)
+{
+    int remainder;
+    while(b!=0)
+    {
+        remainder = a % b;
+        a = b;
+        b = remainder;
+    }
+    return a;
+}
 
 int main(int argv, char *  argc[])
     {
